@@ -1,0 +1,332 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "ae5928ca-ee3d-11eb-95aa-000f0045a030",
+    "deck_config_uuid": "ae593702-ee3d-11eb-95aa-000f0045a030",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": false,
+            "crowdanki_uuid": "ae593702-ee3d-11eb-95aa-000f0045a030",
+            "dyn": false,
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    30.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 20,
+                "separate": true
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "replayq": false,
+            "rev": {
+                "bury": true,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 200
+            },
+            "reviewOrder": 0,
+            "timer": 1
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [],
+    "name": "Physikalische Konstanten",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "css": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "name": "Name",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Formelzeichen",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Mantisse",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Exponent",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Einheiten",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Erläuterung",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Physikalische Konstanten",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1
+                    ]
+                ],
+                [
+                    1,
+                    "any",
+                    [
+                        0,
+                        1,
+                        4
+                    ]
+                ],
+                [
+                    2,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "Einheiten von {{Name}}:\n\\[ [{{Formelzeichen}}] = {{Einheiten}} \\]\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Einheiten",
+                    "ord": 0,
+                    "qfmt": "Einheiten von {{Name}}:\n\\[ [{{Formelzeichen}}] = \\text{?} \\]"
+                },
+                {
+                    "afmt": "Größenordnung von {{Name}}:\n\\[ {{Formelzeichen}} \\approx 10^{ {{Exponent}} } \\ {{Einheiten}} \\]",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Größenordnung",
+                    "ord": 1,
+                    "qfmt": "Größenordnung von {{Name}}:\n\\[ {{Formelzeichen}} \\approx 10^? \\ {{Einheiten}} \\]"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n\\[ {{Formelzeichen}} = {{Mantisse}} \\cdot 10^{ {{Exponent}} } \\ {{Einheiten}} \\]\n\n<hr/>\n{{Erläuterung}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "vollständig",
+                    "ord": 2,
+                    "qfmt": "{{Name}}"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "Atomare Masseneinheit",
+                "u",
+                "1,661",
+                "-27",
+                "\\text{kg}",
+                ""
+            ],
+            "guid": "i{X,Tt5,h{",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Avogadrozahl",
+                "N_A",
+                "6,022",
+                "26",
+                "\\text{kmol}^{-1}",
+                ""
+            ],
+            "guid": "EUXYSw29t)",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Elementarladung",
+                "e",
+                "1,602",
+                "-19",
+                "\\text{A·s}",
+                ""
+            ],
+            "guid": "K%?yE?_#`v",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Lichtgeschwindigkeit (Vakuum)",
+                "c",
+                "2,998",
+                "8",
+                "\\frac{\\text m}{\\text s}",
+                ""
+            ],
+            "guid": "xaIy71[W(B",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Magnetische Feldkonstante",
+                "\\mu_0",
+                "4\\pi",
+                "-7",
+                "\\frac{\\mathrm V \\cdot s}{\\mathrm A \\cdot \\mathrm m}",
+                ""
+            ],
+            "guid": "g5R[xO$EIi",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Planck-Konstante",
+                "h",
+                "6,626",
+                "-34",
+                "\\text{J·s}",
+                ""
+            ],
+            "guid": "EHFBdM+PK?",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Rydberg-Konstante (Wasserstoff)",
+                "R_{\\text H}",
+                "1,097",
+                "7",
+                "\\frac{1}{\\text{m}}",
+                ""
+            ],
+            "guid": "HqG8]v{sKu",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Ruhemasse des Elektrons",
+                "m_{0,e}",
+                "9,109",
+                "-31",
+                "\\text{kg}",
+                ""
+            ],
+            "guid": "IRh}:muIbj",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Ruhemasse des Protons",
+                "m_{0,P}",
+                "1,673",
+                "-27",
+                "\\text{kg}",
+                ""
+            ],
+            "guid": "N5^2+<sp$v",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Rydberg-Konstante (m → ∞)",
+                "R_\\infty",
+                "1,097",
+                "7",
+                "\\frac{1}{\\text{m}}",
+                "Die als&nbsp;Wellenzahl&nbsp;ausgedrückte&nbsp;Ionisierungsenergie&nbsp;des Wasserstoffatoms unter Vernachlässigung relativistischer Effekte und der Mitbewegung des Kerns (also bei unendlicher&nbsp;Kernmasse, daher der Index „∞“)."
+            ],
+            "guid": "K3c&h&#YPm",
+            "note_model_uuid": "ae599152-ee3d-11eb-95aa-000f0045a030",
+            "tags": []
+        }
+    ]
+}
